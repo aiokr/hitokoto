@@ -1,5 +1,5 @@
 after_script:
-  - git clone https://${GH_REF} .deploy_git
+  - git clone https://github.com/aiokr/hitokoto .deploy_git
   - cd .deploy_git
   - git checkout master
   - git config --global user.name "aiokr"
@@ -7,15 +7,9 @@ after_script:
   - git add .
   - git commit -m "Update hitokoto By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Coding
-  - git push --force --quiet "https://aiokr:${CO_TOKEN}@git.coding.net/StarkChen/hitokoto.git"
+  - git push --force --quiet " https://aiokr:${codingtoken}@git.coding.net/StarkChen/hitokoto.git/
+"
 
 branches:
   only:
     - master
-
-env:
- global:
-   # Github
-   - GH_REF: github.com/aiokr/hitokoto
-   # Coding
-   - CO_REF: git.coding.net/StarkChen/hitokoto.git
