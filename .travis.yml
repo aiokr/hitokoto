@@ -7,7 +7,7 @@ after_script:
   - git add .
   - git commit -m "Update hitokoto By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Coding
-  - git push --force --quiet https://aiokr:${CO_TOKEN}@git.coding.net/starkchen/hitokoto.git
+  - git push --force --quiet "https://aiokr:${CO_TOKEN}@git.coding.net/starkchen/hitokoto.git" master:master
 
 branches:
   only:
