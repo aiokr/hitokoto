@@ -2,8 +2,8 @@ after_script:
   - git clone https://${GH_REF} .deploy_git
   - cd .deploy_git
   - git checkout master
-  - git config user.name "aiokr"
-  - git config user.email "aiokr@foxmail.com"
+  - git config --global user.name "aiokr"
+  - git config --global user.email "aiokr@foxmail.com"
   - git add .
   - git commit -m "Update hitokoto By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Coding
@@ -16,6 +16,6 @@ branches:
 env:
  global:
    # Github
-   - GH_REF: github.com/aiokr/hitokoto.git
+   - GH_REF: github.com/aiokr/hitokoto
    # Coding
-   - CO_REF: git@git.coding.net:StarkChen/hitokoto.git
+   - CO_REF: git.coding.net/StarkChen/hitokoto.git
