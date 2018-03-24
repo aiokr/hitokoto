@@ -7,4 +7,4 @@ after_script:
   - git add .
   - git commit -m "Update hitokoto By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Coding
-  - git push --force --quiet "https://aiokr:${codingtoken}@git.coding.net/StarkChen/hitokoto.git/"
+  - git push --force --quiet https://aiokr:${token}@git.coding.net/StarkChen/hitokoto.git/
