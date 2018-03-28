@@ -1,4 +1,4 @@
-after_script:
+script:
   - git clone https://github.com/aiokr/hitokoto ./deploy_git
   - cd ./deploy_git
   - git checkout master
