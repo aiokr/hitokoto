@@ -3,7 +3,6 @@ script:
   - git config --global user.name "aiokr"
   - git config --global user.email "aiokr@foxmail.com"
   - git add --all .
-  - git commit -m "hitokoto"
   # Coding
   - git push --force --quiet "https://aiokr:${CO_TOKEN}@git.coding.net/aiokr/hitokoto.git" master:master
 
