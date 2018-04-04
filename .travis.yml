@@ -1,11 +1,9 @@
 script:
-  - git clone https://github.com/aiokr/hitokoto ./deploy_git
-  - cd ./deploy_git
   - git checkout master
   - git config --global user.name "aiokr"
   - git config --global user.email "aiokr@foxmail.com"
   - git add .
-  - git commit -m "Update hitokoto By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  - git commit -m "hitokoto"
   # Coding
   - git push --force --quiet "https://aiokr:${CO_TOKEN}@git.coding.net/aiokr/hitokoto.git" master:master
 
